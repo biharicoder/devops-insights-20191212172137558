@@ -58,14 +58,6 @@ module.exports = function(grunt) {
             }
         },
 
-        clean: {
-            options: {
-                force: true,
-                expand: true
-            },
-            coverage: ['tests/coverage'],
-            apidocs: ['apidoc']
-        },
 
         copy: {
             resourcesForInstrumented: {
@@ -201,7 +193,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['availabletasks']);
     grunt.registerTask('dev-lint', ['jshint:browser', 'jshint:server']);
-    grunt.registerTask('dev-setup', ['clean:all', 'sass:dist', 'jshint:browser']);
+    grunt.registerTask('dev-setup', ['sass:dist', 'jshint:browser']);
     grunt.registerTask('fvt-test', ['mochaTest:fvt']);
     grunt.registerTask('dev-test', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side-spec']);
     grunt.registerTask('dev-test-cov', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side', 'storeCoverage', 'makeReport-lcov', 'makeReport']);
