@@ -30,7 +30,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
     "devDependencies": {
     "chai": "^3.4.0",
     "grunt": "^1.0.4",
