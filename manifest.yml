@@ -1,10 +1,10 @@
 applications:
-- disk_quota: 10M
+- disk_quota: 1024M
   name: demodra
   buildpack: sdk-for-nodejs
   command: serve -s build
   path: .
   instances: 1
-  memory: 10M
+  memory: 64M
   env:
     DIFF_ENV: testing

@@ -1,11 +1,11 @@
 applications:
-- disk_quota: 10M
+- disk_quota: 1024M
   host: demodratest
   name: demodratest
   command: serve -s build
   path: .
   domain: mybluemix.net
   instances: 1
-  memory: 10M
+  memory: 64M
   env:
     DUMMY_ENV: testing
