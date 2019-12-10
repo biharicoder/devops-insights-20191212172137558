@@ -58,6 +58,14 @@ module.exports = function(grunt) {
             }
         },
 
+        clean: {
+            options: {
+                force: true,
+                expand: true
+            },
+            coverage: ['tests/coverage'],
+            apidocs: ['apidoc']
+        },
 
         copy: {
             resourcesForInstrumented: {
