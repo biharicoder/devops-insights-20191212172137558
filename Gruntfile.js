@@ -64,7 +64,6 @@ module.exports = function(grunt) {
                 expand: true
             },
             coverage: ['tests/coverage'],
-            all: ['bower_components'],
             apidocs: ['apidoc']
         },
 
@@ -138,7 +137,7 @@ module.exports = function(grunt) {
                         'Dev build tasks': ['dev-setup']
                     },
                     descriptions: {
-                        'dev-setup': 'Install necessary npm modules and project code into the ./dist directory. (Only needed once per branch unless you are changing runtime node or bower component dependencies.',
+                        'dev-setup': 'Install necessary npm modules and project code into the ./dist directory. (Only needed once per branch unless you are changing runtime node dependencies.',
                     }
                 }
             }
@@ -156,7 +155,7 @@ module.exports = function(grunt) {
             },
             browser: {
                 files: {
-                    src: ['static/**/*.js', '!static/bower_components/**', '!static/js/date.js']
+                    src: ['static/**/*.js', '!static/js/date.js']
                 }
             },
             server: {
@@ -191,7 +190,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-available-tasks');
-    grunt.loadNpmTasks('grunt-bower-installer');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -203,7 +201,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['availabletasks']);
     grunt.registerTask('dev-lint', ['jshint:browser', 'jshint:server']);
-    grunt.registerTask('dev-setup', ['clean:all', 'bower', 'sass:dist', 'jshint:browser']);
+    grunt.registerTask('dev-setup', ['clean:all', 'sass:dist', 'jshint:browser']);
     grunt.registerTask('fvt-test', ['mochaTest:fvt']);
     grunt.registerTask('dev-test', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side-spec']);
     grunt.registerTask('dev-test-cov', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side', 'storeCoverage', 'makeReport-lcov', 'makeReport']);
