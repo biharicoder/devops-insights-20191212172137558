@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     dest: 'tests/coverage/instrumented',
-                    src: ['routes/*.js', 'dataprovider/*.js']
+                    src: 'routes/*.js',
                 }]
             }
         },
