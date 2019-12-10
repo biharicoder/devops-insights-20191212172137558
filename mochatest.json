@@ -5,15 +5,15 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2019-12-10T20:27:32.825Z",
-    "end": "2019-12-10T20:27:32.831Z",
-    "duration": 6
+    "start": "2019-12-10T21:51:54.539Z",
+    "end": "2019-12-10T21:51:54.548Z",
+    "duration": 9
   },
   "tests": [
     {
       "title": "with without zip code",
       "fullTitle": "Get Weather with without zip code",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -27,7 +27,7 @@
     {
       "title": "with incomplete zip code",
       "fullTitle": "Get Weather with incomplete zip code",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -45,7 +45,7 @@
     {
       "title": "with without zip code",
       "fullTitle": "Get Weather with without zip code",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -59,7 +59,7 @@
     {
       "title": "with incomplete zip code",
       "fullTitle": "Get Weather with incomplete zip code",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
