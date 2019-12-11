@@ -1,8 +1,8 @@
 applications:
 - disk_quota: 1024M
-  host: demodratest
-  name: demodratest
-  command: serve -s build
+  host: demodoitest
+  name: demodoitest
+  command: npx serve -s build
   path: .
   domain: mybluemix.net
   instances: 1
