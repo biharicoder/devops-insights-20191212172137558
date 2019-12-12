@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">64.71% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>20/20</span>
+        <span class='fraction'>22/34</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>8/8</span>
+        <span class='fraction'>8/16</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>2/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">64.71% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>20/20</span>
+        <span class='fraction'>22/34</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -115,9 +115,7 @@
 70
 71
 72
-73
-74
-75</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+73</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
@@ -158,37 +156,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
@@ -200,7 +196,7 @@ var request = REQUEST.defaults( {
     strictSSL: false
 });
 &nbsp;
-var OPENWEATHERURL = "http://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&amp;units=imperial";
+var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&amp;units=imperial";
 &nbsp;
 exports.getWeather = function(req, res) {
 	var zip = req.query.zip;
@@ -232,37 +228,35 @@ exports.getWeather = function(req, res) {
 };
 router.get('/getWeather', exports.getWeather);
 &nbsp;
-/*
-exports.getWeather2 = function(req, res) {
-	var zip = req.query.zip;
-	if( (zip === null) || (typeof(zip) === 'undefined') ) {
-		return res.status(400).send('zip missing');
+exports.getWeather2 = <span class="fstat-no" title="function not covered" >function(req, res) {</span>
+<span class="cstat-no" title="statement not covered" >	var zip = req.query.zip;</span>
+<span class="cstat-no" title="statement not covered" >	if( (zip === null) || (typeof(zip) === 'undefined') ) {</span>
+<span class="cstat-no" title="statement not covered" >		return res.status(400).send('zip missing');</span>
 	}
 &nbsp;
-	var aurl = OPENWEATHERURL + '&amp;zip=' + zip + ',us';
+<span class="cstat-no" title="statement not covered" >	var aurl = OPENWEATHERURL + '&amp;zip=' + zip + ',us';</span>
 &nbsp;
-	request({
+<span class="cstat-no" title="statement not covered" >	request({</span>
 		method: 'GET',
         url: aurl,
   		json: true
-    }, function(err, resp, body) {
-    	if(err) {
-    		res.status(400).send('Failed to get the data');
+    }, <span class="fstat-no" title="function not covered" >function(err, resp, body) {</span>
+<span class="cstat-no" title="statement not covered" >    	if(err) {</span>
+<span class="cstat-no" title="statement not covered" >    		res.status(400).send('Failed to get the data');</span>
     		//console.error("Failed to send request to openweathermap.org", err);
     	} else {
-    		if(body.cod === 200) {
-    			var weath = "Conditions are " + body.weather[0].main + " and temperature is " + body.main.temp + ' F';
-    			var response = {city: body.name, weather: weath};
-    			return res.status(200).send(response);
+<span class="cstat-no" title="statement not covered" >    		if(body.cod === 200) {</span>
+<span class="cstat-no" title="statement not covered" >    			var weath = "Conditions are " + body.weather[0].main + " and temperature is " + body.main.temp + ' F';</span>
+<span class="cstat-no" title="statement not covered" >    			var response = {city: body.name, weather: weath};</span>
+<span class="cstat-no" title="statement not covered" >    			return res.status(200).send(response);</span>
     		} else {
-                return res.status(400).send({msg:'Failed'});
+<span class="cstat-no" title="statement not covered" >                return res.status(400).send({msg:'Failed'});</span>
             }
     	}
     });
 &nbsp;
 };
 router.get('/getWeather2', exports.getWeather2);
-*/
 &nbsp;
 exports.router = router;
 &nbsp;</pre></td></tr>
@@ -271,7 +265,7 @@ exports.router = router;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Dec 10 2019 15:51:54 GMT-0600 (Central Standard Time)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Dec 12 2019 11:19:47 GMT-0600 (Central Standard Time)
 </div>
 </div>
 <script src="../prettify.js"></script>
