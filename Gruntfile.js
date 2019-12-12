@@ -50,11 +50,10 @@ module.exports = function(grunt) {
                     reporter: 'json',
                     clearRequireCache: true,
                     colors: true,
-                    quite: false,
-                    timeout: 60000,
+                    quite: true,
                     captureFile: 'mochafvt.json'
                 },
-                src: ['tests/fvt/*.js']
+                src: ['tests/server/*.js']
             }
         },
 
